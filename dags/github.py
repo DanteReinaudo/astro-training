@@ -3,7 +3,7 @@ from datetime import datetime
 
 
 @dag(schedule=None, catchup=False, default_args={"retries": 2}, tags=["example"])
-def my_dag():
+def github():
 
     @task
     def my_task():
@@ -12,4 +12,4 @@ def my_dag():
     my_task()
 
 
-my_dag()
+github()
